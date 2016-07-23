@@ -1,0 +1,88 @@
+// ============================================================================
+// Header
+// ============================================================================
+
+.header {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: $timing-base $easing-base all;
+  width: 100%;
+  z-index: 1;
+}
+
+// Nav
+// ----------------------------------------------------------------------------
+
+.header__nav {
+  align-items: center;
+  display: flex;
+
+  .nav__link {
+    @extend %upper;
+    color: $text-color;
+    display: block;
+    font-weight: $font-weight-bold;
+    height: $header-height;
+    line-height: $header-height;
+
+    @include media($screen-md-down) {
+      height: $header-height-sm;
+      line-height: $header-height-sm;
+    }
+
+    @include media($screen-xs-up) {
+      padding: 0 1rem;
+    }
+  }
+
+  .nav__link--active,
+  .nav__link--active:hover {
+    color: $white;
+
+    svg {
+      fill: $white;
+      stroke: $white;
+    }
+  }
+}
+
+// Logo
+// ----------------------------------------------------------------------------
+
+.header__logo {
+  .nav__link {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    fill: $text-color;
+    transition: $timing-base $easing-base fill,
+                $timing-base $easing-base stroke;
+    width: 3rem;
+    max-height: 100%;
+  }
+}
+
+@include media($screen-sm-down) {
+  .header {
+    font-size: $font-size-sm;
+  }
+}
+
+@include media($screen-xs-down) {
+  .header__nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .header__logo svg {
+    width: 2rem;
+  }
+}

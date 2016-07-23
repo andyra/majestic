@@ -1,0 +1,377 @@
+// ============================================================================
+// Type
+// ============================================================================
+
+// Font Face
+// ----------------------------------------------------------------------------
+
+@include font-face("brandon-text", "../fonts/brandon-text-bold",    $font-weight-bold,   normal, $file-formats: eot woff);
+@include font-face("brandon-text", "../fonts/brandon-text-medium",  $font-weight-medium, normal, $file-formats: eot woff);
+@include font-face("brandon-text", "../fonts/brandon-text-regular", $font-weight-normal, normal, $file-formats: eot woff);
+
+// Headings
+// ----------------------------------------------------------------------------
+
+h1, h2, h3 {
+  color: inherit;
+  font-family: inherit;
+  font-feature-settings: "dlig", "liga", "lnum", "kern";
+  font-weight: $font-weight-bold;
+  margin: 0 0 $spacer 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 { font-size: $font-size-xxl; }
+h2 { font-size: $font-size-xl; }
+h3 { font-size: $font-size-lg; }
+
+.section-heading {
+  font-size: $font-size-md;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    display: inline-block;
+    position: relative;
+
+    &:before,
+    &:after {
+      background: $gold-light;
+      content: "";
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      width: 300em; // some huge number
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 1rem;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: 1rem;
+    }
+  }
+}
+
+// Paragraphs
+// ----------------------------------------------------------------------------
+
+p {
+  font-feature-settings: "kern", "onum", "liga";
+  margin: 0 0 $spacer 0;
+  word-break: break-all;
+  word-break: break-word; // Non standard for webkit
+}
+
+.lead {
+  font-size: $font-size-md;
+
+  @include media($screen-md-down) {
+    line-height: 1.4;
+  }
+}
+
+// Links
+// ----------------------------------------------------------------------------
+
+a {
+  @include link-color($link-color, $link-hover-color);
+  color: $link-color;
+  text-decoration: none;
+  transition: $timing-base $easing-base color;
+
+  &:focus {
+    @include tab-focus();
+  }
+}
+
+// For anchors that only point to elements on the page
+.link--plain {
+  color: inherit;
+  cursor: default;
+  border: none;
+  transition: none;
+
+  &:hover {
+    color: inherit;
+    cursor: default;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Mobile links appear as links only when viewing on a mobile device
+// It would be nice to extend the .link-plain class, but that's not possible
+// @link: http://www.sitepoint.com/sass-extend-nobody-told-you/
+.link--mobile {
+  @include media($screen-md-up) {
+    color: inherit;
+    border: none;
+    transition: none;
+
+    &:hover {
+      color: inherit;
+      cursor: default;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// Lists
+// ----------------------------------------------------------------------------
+
+// Variables
+$dl-offset-horizontal:      12em;
+
+// Ordered and Unordered lists
+// @source: http://j.eremy.net/align-lists-flush-left/
+ul, ol {
+  margin: 0 0 $spacer;
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+// Plain lists only remove default browser padding and list-style
+.list--plain {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list--inline li {
+  display: inline-block;
+}
+
+
+// Left align unordered lists
+// @source: http://j.eremy.net/align-lists-flush-left/
+.list--pretty {
+  display: table;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    display: table-row;
+
+    &:before {
+      display: table-cell;
+      opacity: 0.5;
+      padding-right: 0.4em;
+    }
+  }
+}
+
+ul.list--pretty li {
+  content: "\2022";
+}
+
+// Style for pretty ordered lists
+ol.list--pretty li {
+  counter-increment: table-ol;
+
+  &:before {
+    content: counter(table-ol) ".";
+    text-align: right;
+  }
+}
+
+.ul--checks li:before {
+  content: "✓";
+}
+
+// Definition Lists
+dl {
+  margin: 0 0 $spacer;
+}
+
+dt, dd {
+  line-height: $line-height-base;
+}
+
+dt {
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacer / 2;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Aligned definition lists default to being stacked without any of the below
+// styles applied until the main grid breakpoint is reached.
+@include media($grid-break) {
+  .dl-horizontal {
+    dt {
+      @include text-overflow();
+      clear: left;
+      float: left;
+      text-align: right;
+      width: $dl-offset-horizontal - 1em;
+    }
+
+    dd {
+      @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+      margin-left: $dl-offset-horizontal;
+    }
+  }
+}
+
+// Misc Elements
+// ----------------------------------------------------------------------------
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 85%;
+}
+
+// Contextual colors
+.text--muted { opacity: 0.65; }
+
+// Sizes
+.text--sm    { font-size: $font-size-sm; }
+.text--md    { font-size: $font-size-md; }
+
+// Addresses
+address {
+  font-style: normal;
+  line-height: $line-height-base;
+  margin: 0;
+}
+
+
+// Fancies
+// ----------------------------------------------------------------------------
+
+// Fancy bits and bobs for your type
+// https://www.typotheque.com/articles/opentype_features_in_web_browsers_-_tests
+
+// The OpenType feature tag value is always a string of 4 ASCII characters. If
+// it has more or less characters, the whole property is invalid. The value is
+// an positive integer. The two keywords on and off are synonyms for 1 and 0
+// respectively. If no value is set, the default is 1. For non-Boolean
+// OpenType features (e.g. stylistic alternates), the value implies a
+// particular glyph to be selected; for Boolean values, it is a switch.
+// @source: https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
+
+// Enable automatic fractions
+%fractions {
+  font-feature-settings: "frac";
+}
+
+// Consistent height numbers
+%lining-numerals {
+  font-feature-settings: "lnum", "kern";
+}
+
+// Ascending and descending numbers
+%oldstyle-numerals {
+  font-feature-settings: "onum", "kern";
+}
+
+// Enable tabular (monospaced) figures
+%tabular {
+  font-feature-settings: "tnum";
+}
+
+// Small caps using alternate glyphs
+%small-caps {
+  font-feature-settings: "smcp", "kern";
+  letter-spacing: $caps-spacing;
+}
+
+// Convert both upper and lowercase to small caps (affects punctuation also)
+%small-caps-all {
+  font-feature-settings: "c2sc", "smcp";
+  letter-spacing: $caps-spacing;
+}
+
+// All uppercase letters
+%upper {
+  letter-spacing: $caps-spacing;
+  text-transform: uppercase;
+}
+
+// Make the first letter of a paragraph grand
+%drop-cap {
+  &:first-letter {
+    @include shadow-letters($gray-light, left, 6px);
+    color: inherit;
+    float: left;
+    font-size: 4rem;
+    font-weight: $font-weight-bold;
+    line-height: .75;
+    margin: 10px .5rem 0 0;
+    padding: 0;
+    text-indent: 0;
+  }
+
+  @include media($screen-sm-down) {
+    &:first-letter {
+      font-size: $font-size-lg;
+      float: none;
+      font-weight: normal;
+      margin: 0;
+      text-shadow: none;
+    }
+  }
+}
+
+// Combats our sibling paragraphs syling and indentation
+// as not to ruin our beautiful drop caps.
+p + .drop-cap {
+  margin-top: 0;
+  text-indent: 0;
+}
+
+// Enable historical forms
+%historical {
+  font-feature-settings: "hist";
+}
+
+%hyphens {
+  hyphens: none;
+}
+
+// Enable ligatures
+%ligatures {
+  font-feature-settings: "liga";
+}
+
+// Disable common ligatures, usually on by default
+%no-ligatures {
+  font-feature-settings: "liga" off;
+}
+
+// Use the second available swash character
+%swash {
+  font-feature-settings: "swsh";
+}
+
+// Disable hyphens on certain elements
+// @source: http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+abbr, acronym, blockquote,
+code, dir, kbd,
+listing, plaintext, q,
+samp, tt, var, xmp {
+  hyphens: none;
+}

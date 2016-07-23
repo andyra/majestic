@@ -1,0 +1,24 @@
+// ============================================================================
+// Content Blocks
+// ============================================================================
+
+.block {
+  padding: ($spacer * 2) 0;
+  position: relative;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  @include media($screen-md-down) {
+    padding: ($spacer * 1.5) 0;
+  }
+}
+
+.block__title {
+  svg {
+    margin: 0 auto;
+    max-height: 2rem;
+  }
+}

@@ -1,0 +1,128 @@
+Title: Calendar
+
+----
+
+Happy-hours: 
+
+###Join us for happy hour!
+
+**Thursdays** from 5—9pm
+**Fridays & Saturdays** from 5:30—7:30pm
+
+----
+
+Events: 
+
+- 
+  title: KT and the Blues Scientists
+  date: 2016-02-04
+  start: 08:30 PM
+  end: 11:30 PM
+  description: 'Old school Blues. Pure and simple. Come nod your head with us. (link: https://www.facebook.com/KTandTheBluesScientists/?fref=ts text: Facebook)'
+- 
+  title: Jonathan Hester
+  date: 2016-02-05
+  start: 08:30 PM
+  end: 11:30 PM
+  description: >
+    Local favorite Jonathan Hester charms
+    with acoustic singer/songwriter set.
+- 
+  title: Brenda Kay
+  date: 2016-02-06
+  start: 08:00 PM
+  end: 11:00 PM
+  description: ""
+- 
+  title: Happy Fat Band
+  date: 2016-02-11
+  start: 08:30 PM
+  end: 11:30 PM
+  description: ""
+- 
+  title: A Night of Belly Dancing!
+  date: 2016-02-12
+  start: 08:00 PM
+  end: 11:00 PM
+  description: |
+    Join us for a relaxing evening while we regale you with the exotic libations of belly dancing! A fun and interesting experience for individuals, friends and couples alike.
+    
+    (2) 45 min shows, including audience participation. 8:00 PM and 9:00 PM 10:00 PM free belly dance class, open dance and drumming! The performance will be a professional representation of the Middle Eastern culture and will include both Troupe and solo dances. The dances will include Modern Egyptian music and choreography, Turkish sword, folkloric cane, Tambourine, Moorish skirt dance, tribal, fast drums as well as lovely veil dances. Guest dancers from San Angelo and Oklahoma.
+- 
+  title: Patrick Johnston
+  date: 2016-02-13
+  start: 09:00 PM
+  end: 12:00 AM
+  description: |
+    Patric Johnston is a twenty-three year old musician living in Spring, Tx. Born and raised in Lubbock, Tx, he has been writing and performing for 9 years. His upcoming freshman album "Old Friends New Friends" will be released near the end of this year.
+    
+    (link: https://www.youtube.com/watch?v=MYro8o_m_vA text: EPK Music Video popup: yes)
+- 
+  title: Tony Barker Band
+  date: 2016-02-18
+  start: 08:30 PM
+  end: ""
+  description: |
+    Tony Barker calls his music High Energy Acoustic. Tony is a performing songwriter who has played across Texas at different venues including, "The Late Week Lazy Boy Supper Club, held in the Royal Theater in Archer City, 'Pigeon's Posse' in Austin during SXSW, and Java Jax - a remarkable venue in Sweetwater, Texas." Come and enjoy!
+    
+    (link: http://www.tonybarkermusic.com/ text: Tony Barker Music)
+- 
+  title: Eric Sommer
+  date: 2016-02-20
+  start: 08:30 PM
+  end: 12:00 AM
+  description: |
+    Mr. Sommer has turned a simple strumming style into what may very well be the next big thing: an explosive and dramatic free-form style and, in the process, he's become one of the finest free-form pickers anywhere, borrowing from Steve Howe, Merle Travis, Doc Watson and turning out a style that is authentically unique. And almost impossible to copy.
+    
+    But Eric Sommer does more – a wide variety of open tunings, a range of guitars and a collection of small, wonderfully obscure vintage guitar amps add to the presentation. And seeing Mr. Sommer work all these elements in a live show is something audiences remember for years.
+    
+    With local opener, Taylor Ochs on guitar and ukulele.
+    
+    (link: http://www.ericsommer.com text: Facebook)
+- 
+  title: Lillie Lemmon
+  date: 2016-02-25
+  start: ""
+  end: ""
+  description: 'An Adam Munoz Productions event. (link: https://m.facebook.com/lillielemonmusic/ text: View on Facebook)'
+- 
+  title: 'Radio Recon & Friends'
+  date: 2016-02-27
+  start: 07:30 PM
+  end: 12:00 AM
+  description: |
+    - 7:30 PM Jonathan Hester
+    - 8:30 PM The Transporters
+    - 9:30 PM No Haven
+    - 10:30 PM Radio Recon
+- 
+  title: KT and the Blues Scientists
+  date: 2016-03-03
+  start: 08:30 PM
+  end: 11:30 PM
+  description: 'Old school Blues. Pure and simple. Come nod your head with us. (link: https://www.facebook.com/KTandTheBluesScientists/?fref=ts text: Facebook)'
+- 
+  title: 'Pub Trivia & Vinyl Night'
+  date: 2016-03-04
+  start: 09:00 PM
+  end: 11:30 PM
+  description: |
+    Round up your nerdy posse and join us for a rousing game of **Pub Trivia** starting at 9pm! Awesome prizes will be awarded so choose your team wisely.
+    
+    Beforehand, during and afterwards, experience the glorious sound of a bygone era as our very own (link: https://www.facebook.com/TheRecordGuys?pnref=lhc text: Record Guys popup: true) play MC on their state of the art record playing setup for **Vinyl Night**. Hear favorites from multiple genres and be introduced to secret gems that have gone by under the radar for far too long.
+    
+    **Bring your own vinyl to have a hand in the magic**.
+- 
+  title: 6 Mile Curve
+  date: 2016-03-05
+  start: 08:30 PM
+  end: 11:30 PM
+  description: >
+    A blues, country, rock group from
+    Hamlin. One of favorites!
+- 
+  title: Happy Fat Band
+  date: 2016-03-10
+  start: 08:30 PM
+  end: 11:30 PM
+  description: ""

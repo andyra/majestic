@@ -1,12 +1,17 @@
-<?php snippet('header') ?>
+<?php // Redirect to the correct anchor on home
 
-  <main class="main" role="main">
+$url = explode('/', $_SERVER['REQUEST_URI']);
+$requested_page = $url[1];
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
+$items = $pages->visible();
+foreach($items as $item):
+  $page_path = $item->uri();
+  if ($requested_page == $page_path):
+    $anchor = $site->url() . "/#" . $page_path;
+    go($anchor);
+  else:
+    go(url());
+  endif;
+endforeach;
 
-  </main>
-
-<?php snippet('footer') ?>
+?>

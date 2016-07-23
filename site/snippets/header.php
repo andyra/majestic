@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
-  <meta name="description" content="<?php echo $site->description()->html() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
-
-  <?php echo css('assets/css/main.css') ?>
-
-</head>
-<body>
-
-  <header class="header cf" role="banner">
-    <a class="logo" href="<?php echo url() ?>">
-      <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
-    </a>
-    <?php snippet('menu') ?>
-  </header>
+<header class="header" role="navigation">
+  <ul class="nav header__nav">
+    <li class="nav__item header__logo"><a class="nav__link" href="#home">
+      <?php sprite('logo', 75.5, 50) ?>
+    </a></li>
+    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+    <li class="nav__item"><a class="nav__link" href="#calendar">Calendar</a></li>
+    <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+  </ul>
+</header>

@@ -1,0 +1,64 @@
+// ============================================================================
+// Footer
+// ============================================================================
+
+.footer {
+  padding: $spacer 0;
+  position: relative;
+  text-align: center;
+
+  svg {
+    fill: $text-color;
+  }
+}
+
+.colophon {
+  margin: 0 0 ($spacer / 2);
+}
+
+.colophon__item {
+  @include media($screen-xs-up) {
+    + .colophon__item {
+      margin-left: 1.5em;
+    }
+  }
+
+  a {
+    @include link-color($text-color, $link-color);
+    display: block;
+  }
+
+  .svg--facebook,
+  .svg--instagram {
+    width: 1rem;
+  }
+}
+
+@include media($screen-xs-down) {
+  li.colophon__item {
+    display: block;
+    line-height: $mobile-line-height;
+  }
+
+  .colophon__social {
+    a {
+      display: inline-block;
+      height: $mobile-line-height;
+      width: $mobile-line-height;
+    }
+
+    svg {
+      display: inline-block;
+    }
+  }
+}
+
+.footer__copyright {
+  display: block;
+  opacity: 0.5;
+}
+
+.footer__logo {
+  margin: 0 auto;
+  width: 3rem;
+}

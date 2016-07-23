@@ -1,0 +1,79 @@
+// ============================================================================
+// Calendar
+// ============================================================================
+
+$calendar-border:     1px solid $gray-light;
+$cell-padding:        0.25rem;
+
+// Events
+// ----------------------------------------------------------------------------
+
+.event {
+  background: $white;
+  display: none; // hide by default
+  margin: 0 auto;
+  width: 100%;
+
+  &:first-child { border-radius: $border-radius-base $border-radius-base 0 0; }
+  &:last-child  { border-radius: 0 0 $border-radius-base $border-radius-base; }
+
+  + .event {
+    border-top: 1px solid $gray-lighter;
+  }
+}
+
+.event__date,
+.event__content {
+  display: table-cell;
+  padding: 1rem 0;
+  vertical-align: top;
+}
+
+.event__date {
+  line-height: 1;
+  padding: 1rem 0;
+  text-align: center;
+  width: 4rem;
+}
+
+.event__day {
+  display: block;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-medium;
+}
+
+.event__month {
+  @extend %upper;
+  display: block;
+  font-size: $font-size-sm;
+}
+
+.event__content {
+  padding-right: 1rem;
+}
+
+.event__time {
+  font-weight: $font-weight-medium;
+}
+
+.event__title {
+  color: $gold;
+  font-size: $font-size-md;
+  margin: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.event__description {
+  font-size: $font-size-sm;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.events__view-more {
+  display: block;
+  text-align: center;
+  line-height: $spacer * 2;
+}

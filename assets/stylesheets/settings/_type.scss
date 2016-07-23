@@ -1,0 +1,26 @@
+// ============================================================================
+// Type Settings
+// ============================================================================
+
+// Families
+$font-family-base:      "brandon-text", $helvetica;
+
+// Sizes
+$font-size-xxl:         u(42px, rem);
+$font-size-xl:          u(36px, rem);
+$font-size-lg:          u(30px, rem);
+$font-size-md:          u(26px, rem);
+$font-size-base:        u($font-size-root, rem);
+$font-size-sm:          u(15px, rem);
+$font-size-xs:          u(13px, rem);
+
+// Line height
+$line-height-base:      1.4;
+
+// Weights
+$font-weight-thin:      100;
+$font-weight-light:     300;
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-bold:      700;
+$font-weight-black:     900;

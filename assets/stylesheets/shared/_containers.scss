@@ -1,0 +1,22 @@
+// ============================================================================
+// Container
+// ============================================================================
+
+.container {
+  @include outer-container();
+  padding-left: $body-padding;
+  padding-right: $body-padding;
+
+  @include media($screen-sm-down) {
+    padding-left: $body-padding-sm;
+    padding-right: $body-padding-sm;
+  }
+}
+
+.container--lg {
+  max-width: $screen-lg;
+}
+
+.container--sm {
+  max-width: $screen-sm;
+}

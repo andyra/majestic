@@ -1,0 +1,24 @@
+@mixin torn-edge($color, $position: top, $flip: false) {
+  $edge-height: 6px;
+
+  &:after {
+    background: url("../images/edge-#{$color}.png") repeat-x center;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+
+    @if $position == "top" {
+      top: 0;
+    } @else {
+      bottom: -$edge-height;
+    }
+
+    @if $flip {
+      transform: rotate(180deg);
+      top: -$edge-height;
+    }
+  }
+}

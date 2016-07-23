@@ -15,7 +15,8 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', '1940dc58ec98de46245b5f1545589044');
+c::set('timezone', 'America/Chicago');
 
 /*
 

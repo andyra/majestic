@@ -1,0 +1,58 @@
+// ============================================================================
+// Global Styles
+// ============================================================================
+
+// Generic style values that can be reused across your entire project. If a
+// variable applies only to a specific component, it should be placed at the top
+// of the component's .scss file.
+
+// Spacing
+$spacer:                $font-size-base * $line-height-base;
+$mobile-line-height:    44px;
+
+// Animation
+$timing-base:           0.1s;
+$easing-base:           ease-out;
+
+// Body
+$body-bg:               $white;
+$body-padding:          $spacer;
+$body-padding-sm:       $spacer / 2;
+
+// Border-radius
+$border-radius-lg:      4px;
+$border-radius-base:    2px;
+$border-radius-sm:      1px;
+
+// Borders
+$border-color-base:     $gray-lighter;
+$border-width-lg:       4px;
+$border-width-base:     2px;
+$border-width-sm:       1px;
+
+// Box shadow
+$box-shadow-base:       1px 2px 6px rgba($black, 0.12);
+
+// Header
+$header-height:         60px;
+$header-height-sm:      $mobile-line-height;
+
+// Type options
+$caps-spacing:          0.1em;
+$readable-width:        strip-unit(flex-grid(8, $grid-columns)) / 100 * $max-width;
+$text-color:            $gray-darker;
+$text-color-light:      $gray;
+$link-color:            $color-primary;
+$link-hover-color:      darken($link-color, 15%);
+
+// Z-Index Scale
+$z-index-1:             100;
+$z-index-2:             200;
+$z-index-3:             300;
+$z-index-4:             400;
+$z-index-5:             500;
+$z-index-6:             600;
+$z-index-7:             700;
+$z-index-8:             800;
+$z-index-9:             900;
+$z-index-10:            1000;

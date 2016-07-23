@@ -1,0 +1,19 @@
+@mixin block-theme($bg-color, $accent-color) {
+  background: $bg-color;
+  @if lightness($bg-color) < 50% {
+    color: white;
+  }
+
+  h1 svg,
+  h2 svg {
+    fill: $accent-color;
+  }
+
+  a {
+    color: $accent-color;
+
+    &:hover {
+      color: darken($accent-color, 15%);
+    }
+  }
+}

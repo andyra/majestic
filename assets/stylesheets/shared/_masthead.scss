@@ -1,0 +1,37 @@
+// ============================================================================
+// Masthead
+// ============================================================================
+
+.masthead {
+  background: {
+    attachment: fixed;
+    color: $gold;
+    image: url("../images/building-drawing.png");
+    repeat: no-repeat;
+    position: center -4em;
+    size: 960px;
+  }
+  margin-top: -($spacer * 2);
+  padding: ($spacer * 6) 0 ($spacer * 2);
+  text-align: center;
+}
+
+.masthead__title {
+  @include shadow-letters(darken($gold, 24%), left, 6px);
+  color: $white;
+  font-size: 3rem;
+
+  svg {
+    fill: $white;
+    margin: 0 auto;
+    max-width: 28rem;
+  }
+}
+
+.masthead__subtitle {
+  font-size: $font-size-md;
+  margin-bottom: ($spacer * 2);
+  text-transform: none;
+  opacity: 0.75;
+  letter-spacing: 0;
+}

@@ -1,0 +1,42 @@
+// ============================================================================
+// Colors
+// ============================================================================
+
+// It's nice to use HSL in your CSS to make it easy to tweak the colors as you
+// work without using an external graphics editing program.
+// @source: http://rgb.to/
+
+// Grays
+$black:                 hsl(200, 30%,  10%);
+$gray-darker:           hsl(200, 25%,  20%);
+$gray-dark:             hsl(200, 20%,  40%);
+$gray:                  hsl(200, 15%,  70%);
+$gray-light:            hsl(200, 10%,  90%);
+$gray-lighter:          hsl(200,  7%,  95%);
+$white:                 hsl(200,  2%, 100%);
+
+// Colors
+$green:                 hsl(168,  66%, 34%) !default;
+$green-light:           hsl(168,  38%, 90%) !default;
+$green-lighter:         hsl(168,  78%, 95%) !default;
+
+
+
+
+
+
+$aqua:                  hsl(180, 60%,  65%);
+$parrot:                hsl(168, 66%,  34%);
+$grass:                 hsl( 76, 49%,  51%);
+$maroon:                hsl(348, 54%,  30%);
+$mint:                  hsl( 99, 45%,  90%);
+$ocean:                 hsl(194, 65%,  19%);
+$tomato:                hsl(  7, 86%,  64%);
+$yellow:                hsl( 51, 79%,  57%);
+
+$gold:                  hsl( 36, 28%,  51%);
+$gold-light:            hsl( 36, 28%,  85%);
+
+// Abstractions
+$color-primary:         $tomato;
+$color-secondary:       $parrot;
