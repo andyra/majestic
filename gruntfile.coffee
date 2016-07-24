@@ -109,7 +109,7 @@ module.exports = (grunt) ->
   require('load-grunt-tasks') grunt
 
   # Register tasks
-  grunt.registerTask 'default', ['coffee', 'jshint', 'concat', 'uglify', 'sass', 'autoprefixer', 'watch']
+  grunt.registerTask 'default', ['coffee', 'sass', 'autoprefixer', 'watch']
   grunt.registerTask 'scripts', ['coffee', 'jshint', 'concat', 'uglify']
   grunt.registerTask 'styles', ['sass', 'autoprefixer']
   grunt.registerTask 'sprite', ['svgstore', 'svgmin']

@@ -1,5 +1,5 @@
-<?php echo js('https://maps.googleapis.com/maps/api/js?v=3.exp') ?>
-<?php echo js('assets/javascripts/npl.min.js') ?>
+<?= js('https://maps.googleapis.com/maps/api/js?v=3.exp') ?>
+<?= js('assets/javascripts/npl.min.js') ?>
 
 <?php # Google Analytics ?>
 <script>

@@ -1,17 +1,9 @@
-<?php // Redirect to the correct anchor on home
+<?php snippet("header") ?>
 
-$url = explode('/', $_SERVER['REQUEST_URI']);
-$requested_page = $url[1];
+<div class="container container--sm">
+  <div class="block">
+    <?= $page->text() ?>
+  </div>
+</div>
 
-$items = $pages->visible();
-foreach($items as $item):
-  $page_path = $item->uri();
-  if ($requested_page == $page_path):
-    $anchor = $site->url() . "/#" . $page_path;
-    go($anchor);
-  else:
-    go(url());
-  endif;
-endforeach;
-
-?>
+<?php snippet("footer") ?>
