@@ -3,6 +3,11 @@
 title: Home
 pages: false
 files: true
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
 fields:
   title:
     label: Title

@@ -2,6 +2,19 @@
 // About
 // ============================================================================
 
+.gallery--history {
+  @include media($screen-sm-up) {
+    .gallery__item:nth-child(1) { width: (100% / 2); }
+    .gallery__item:nth-child(2) { width: (100% / 2); }
+    .gallery__item:nth-child(3) { width: (100% / 3); }
+    .gallery__item:nth-child(4) { width: (100% / 3); }
+    .gallery__item:nth-child(5) { width: (100% / 3); }
+  }
+}
+
+// Event list
+// ----------------------------------------------------------------------------
+
 .event-list {
   @extend .list--plain;
   text-align: center;

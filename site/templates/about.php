@@ -10,7 +10,6 @@ $subtitle .= "</ul>";
 ?>
 
 <?php snippet("header", array("masthead_subtitle" => $subtitle)) ?>
-
 <?php foreach ($page->about()->toStructure() as $section): ?>
   <?php $slug = slugify($section->heading()) ?>
   <section id="<?= $slug ?>" class="<?= $slug ?>-section block">
@@ -18,16 +17,23 @@ $subtitle .= "</ul>";
       <h2 class="section-heading"><span><?= $section->heading() ?></span></h2>
       <?= $section->text()->kirbytext() ?>
     </div>
-    <div class="container container--md">
-      <?php $images = explode("\n", $section->gallery()->html()); ?>
-      <ul class="gallery">
-        <?php foreach ($images as $image): ?>
-          <li class="gallery__item">
-            <img src="<?= $image ?>" alt="<?= ?>">
-          </li>
-        <?php endforeach ?>
-      </ul>
-    </div>
+
+    <?php if ($section->gallery()->isNotEmpty()): ?>
+      <div class="container container--md">
+        <ul class="gallery gallery--<?= $slug ?>">
+          <?php $filenames = explode(",", $section->gallery()->value()); ?>
+          <?php foreach($page->files()->find($filenames) as $file): ?>
+            <?php $caption = $file->caption()->value(); ?>
+            <li class="gallery__item">
+              <a class="gallery__link" rel="<?= $slug ?>-gallery" href="<?= thumb($file, array('width' => 1200))->url() ?>" title="<?= $caption ?>">
+                <img src="<?= thumb($file, array('width' => 800))->url() ?>" alt="<?= $caption ?>">
+              </a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+    <?php endif ?>
+
   </section>
 <?php endforeach ?>
 

@@ -71,7 +71,7 @@ module.exports = (grunt) ->
           'assets/javascripts/shared/**/*.js'
           'assets/javascripts/vendor/**/*.js'
         ]
-        tasks: ['concat', 'uglify']
+        tasks: ['concat', 'uglify', 'clean']
 
     svgmin:
       options:
