@@ -19,7 +19,8 @@
 .masthead__title {
   @include shadow-letters(darken($gold, 24%), left, 6px);
   color: $white;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  line-height: 1;
 
   svg {
     fill: $white;
@@ -29,9 +30,44 @@
 }
 
 .masthead__subtitle {
+  animation-delay: 0.25s;
   font-size: $font-size-md;
-  margin-bottom: ($spacer * 2);
-  text-transform: none;
-  opacity: 0.75;
   letter-spacing: 0;
+  margin: 0;
+  text-transform: none;
+
+  @include media($screen-md-down) {
+    margin-top: ($spacer / 2);
+  }
+
+  &.nav {
+    display: inline-block;
+  }
+
+  @include media($screen-sm-down) {
+    .page-subtitle--item {
+      padding: 0 0.35rem;
+    }
+  }
+}
+
+.masthead__subtitle-item {
+  @extend %upper;
+  border-bottom: 2px solid transparent;
+  color: $white;
+  font-size: $font-size-sm;
+  font-weight: bold;
+  margin-bottom: 0;
+
+  .nav__item & {
+    &:active,
+    &:hover {
+      color: $white;
+      border-bottom-color: $white;
+    }
+
+    &:focus {
+      color: $white;
+    }
+  }
 }

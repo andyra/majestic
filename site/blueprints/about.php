@@ -18,8 +18,9 @@ fields:
     type: structure
     modalsize: large
     entry: >
-      <strong>{{heading}}</strong><br>
-      {{text}}
+      <strong>{{heading}}</strong><br><br>
+      {{text}}<br><br>
+      {{gallery}}
     fields:
       heading:
         label: Heading

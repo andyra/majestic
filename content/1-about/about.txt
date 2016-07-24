@@ -22,6 +22,12 @@ About:
     Then in 1908, the Sanborn records show that the building became Abilene’s first moving pictures house: The Majestic (as listed in the 1909 City Directory). Eventually, the moving pictures house moved down the street, and in 1915 the building became a confectionary (some people believe this was the original home of Vletas & Vletas).
     
     The building has changed hands many more times since then and served the city of Abilene in a variety of ways. Today, we pay tribute to one of the buildings most exciting uses in rechristening the building as The Majestic. Our hope is that it will continue to provide many more memories for the residents of Abilene and surrounding areas as it has always done throughout its rich and colorful past.
+  gallery: |
+    pine-1890.jpg
+    pine-1905.jpg
+    pine-1906.jpg
+    pine-1930.jpg
+    pine-1943.jpg
 - 
   heading: The Space
   text: |
@@ -30,7 +36,14 @@ About:
     Though the rooms have been restored and remodeled, the classic charm of the building has been preserved. The original maple floor in the South Room is perfect for dancing. The original dark pine wood floor in the North Room provides a rich, elegant, and comfortable ambiance to compliment your event.
     
     The lighting in both rooms is extremely versatile, with suspended light fixtures and track lighting which highlight the exposed brick of the 100 year-old walls. All lights have dimmers which enable you to provide the look and atmosphere you want. Whether you want a bright, open feel for a daytime meeting or wedding reception or a more softly lit, warm feel for an elegant dinner party, formal dance, or evening event, The Majestic is versatile enough for any occasion.
-  gallery: ""
+  gallery: |
+    majestic-interior-angle
+    majestic-interior-split.jpg
+    majestic-interior-back.jpg
+    majestic-floor.jpg
+    majestic-table.jpg
+    majestic-ceiling.jpg
+    majestic-exterior-angle.jpg
 - 
   heading: Events
   text: |

@@ -26,6 +26,18 @@
       <?php endforeach ?>
     </ul>
   </header>
-  <?php snippet("masthead") ?>
+
+  <section class="masthead block">
+    <div class="container">
+      <h1 class="masthead__title animated fadeInUp">
+        <?php if ($page->isHomePage()): ?>
+          <?php sprite("logo", 600, 190) ?>
+        <?php else : ?>
+          <?= $page->title() ?>
+        <?php endif ?>
+      </h1>
+      <?= $masthead_subtitle ?>
+    </div>
+  </section>
 
   <main class="main" role="main">

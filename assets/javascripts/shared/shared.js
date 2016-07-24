@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    var $header, headerHeight;
+    var $header, headerHeight, subnavLink;
     $header = $(".header");
     headerHeight = $header.outerHeight();
     $header.headroom({
@@ -16,7 +16,7 @@
         notBottom: "header--not-bottom"
       }
     });
-    return $(".gallery--link").fluidbox({
+    $(".gallery--link").fluidbox({
       resize: true,
       preload: true,
       touch: true,
@@ -32,6 +32,21 @@
           close: '<div id="fluidbox-btn-close" class="gallery--close">&times;</div>',
           next: '<div id="fluidbox-btn-next" class="gallery--nav gallery--next"></div>',
           prev: '<div id="fluidbox-btn-prev" class="gallery--nav gallery--prev"></div>'
+        }
+      }
+    });
+    subnavLink = $('a[href^="#"');
+    return subnavLink.click(function() {
+      var target;
+      target = void 0;
+      if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
+        target = $(this.hash);
+        target = (target.length ? target : $("[name=" + this.hash.slice(1) + "]"));
+        if (target.length) {
+          $("html,body").animate({
+            scrollTop: target.offset().top - 55
+          }, 500);
+          return false;
         }
       }
     });

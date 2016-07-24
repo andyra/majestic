@@ -1,7 +1,12 @@
-<?php snippet("header") ?>
+<?php
+$subtitle = "<div class='masthead__subtitle animated fadeInUp'>\n";
+$subtitle .= "\t<h2 class='masthead__subtitle-item'>{$site->description()}</h2>\n";
+$subtitle .= "</div>";
+?>
+
+<?php snippet("header", array("masthead_subtitle" => $subtitle)) ?>
 
 <div class="block">
-
   <div class="container container--sm">
     <?= $page->text()->kirbytext() ?>
   </div>
@@ -18,6 +23,5 @@
     </ul>
   </div>
 </div>
-
 
 <?php snippet("footer") ?>

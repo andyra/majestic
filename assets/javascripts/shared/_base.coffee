@@ -38,7 +38,24 @@ $ ->
         prev: '<div id="fluidbox-btn-prev" class="gallery--nav gallery--prev"></div>'
   )
 
+  # Scroll to anchor smoothly
+  # ----------------------------------------------------------------------------
+
+  subnavLink = $('a[href^="#"')
+
+  subnavLink.click ->
+    target = undefined
+    if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
+      target = $(@hash)
+      target = ((if target.length then target else $("[name=" + @hash.slice(1) + "]")))
+      if target.length
+        $("html,body").animate
+          scrollTop: (target.offset().top - 55)
+        , 500
+        false
+
+# Dismiss lightbox when ESC key pressed
 $(document).keydown (e) ->
-  # ESCAPE key pressed
   if e.keyCode == 27
     $(".gallery--link").fluidbox('close')
+
