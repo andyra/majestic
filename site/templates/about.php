@@ -26,7 +26,7 @@ $subtitle .= "</ul>";
             <?php $caption = $file->caption()->value(); ?>
             <li class="gallery__item">
               <a class="gallery__link" rel="<?= $slug ?>-gallery" href="<?= thumb($file, array('width' => 1200))->url() ?>" title="<?= $caption ?>">
-                <img src="<?= thumb($file, array('width' => 800))->url() ?>" alt="<?= $caption ?>">
+                <img src="<?= thumb($file, array('width' => 800, 'height' => 450, 'crop' => true))->url() ?>" alt="<?= $caption ?>">
               </a>
             </li>
           <?php endforeach; ?>

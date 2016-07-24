@@ -22,8 +22,8 @@ module.exports = (grunt) ->
       dist:
         src: [
           # Manual dependency ordering (put specific files first)
-          'assets/javascripts/vendor/headroom.min.js'
-          'assets/javascripts/vendor/jQuery.headroom.min.js'
+          'assets/javascripts/vendor/headroom.js'
+          'assets/javascripts/vendor/jquery.headroom.js'
           'assets/javascripts/vendor/*.js'
           'assets/javascripts/shared/*.js'
           'assets/javascripts/pages/*.js'

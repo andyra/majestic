@@ -16,7 +16,7 @@ $subtitle .= "</div>";
       <?php foreach($page->files() as $image): ?>
         <li class="gallery__item">
           <a class="gallery__link" rel="home-gallery" href="<?= thumb($image, array('width' => 1200))->url() ?>" title="<?= $image->caption() ?>">
-            <img src="<?= thumb($image, array('width' => 800))->url() ?>" alt="<?= $image->caption() ?>">
+            <img src="<?= $image->crop(800, 450)->url() ?>" alt="<?= $image->caption() ?>">
           </a>
         </li>
       <?php endforeach ?>

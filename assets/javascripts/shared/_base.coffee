@@ -26,6 +26,16 @@ $ ->
     touch: true
     animated: true
     padding: 20
+    templates:
+      inner: '<div id="fluidbox-inner" class="gallery--inner"></div>'
+      outer: '<div id="fluidbox-outer" class="gallery--outer"></div>'
+      overlay: '<div id="fluidbox-overlay" class="gallery--overlay"></div>'
+      loading: '<div id="fluidbox-loading" class="gallery--loader"></div>'
+      title: '<div id="fluidbox-title" class="gallery--title"></div>'
+      buttons:
+        close: '<div id="fluidbox-btn-close" class="gallery--close">&times;</div>',
+        next: '<div id="fluidbox-btn-next" class="gallery--nav gallery--next"></div>'
+        prev: '<div id="fluidbox-btn-prev" class="gallery--nav gallery--prev"></div>'
   )
 
   # Scroll to anchor smoothly

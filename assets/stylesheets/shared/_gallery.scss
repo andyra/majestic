@@ -31,7 +31,7 @@ $gallery-padding:   0.5rem;
   }
 }
 
-@include media($screen-xs-down) {
+@include media($screen-sm-down) {
   .gallery__item {
     display: none;
 
