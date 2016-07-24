@@ -27,13 +27,17 @@
 @import "shared/base";
 @import "shared/type";
 
-// Shared
+// Objects
 @import "shared/animations";
 @import "shared/blocks";
 @import "shared/buttons";
 @import "shared/containers";
 @import "shared/images";
 @import "shared/navs";
+
+// Components
+@import "shared/fluidbox";
+@import "shared/gallery";
 
 // Templates
 @import "shared/header";

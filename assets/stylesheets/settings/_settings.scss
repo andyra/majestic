@@ -28,7 +28,8 @@ $font-size-root:  20px;
 @import "breakpoints";
 @import "colors";
 @import "type";
-@import "theme";
+@import "components";
+@import "z-index";
 
 // Mixins
 @import "mixins/block-theme";

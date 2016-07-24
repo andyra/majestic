@@ -1,0 +1,42 @@
+// ============================================================================
+// Gallery
+// ============================================================================
+
+$gallery-padding:   0.5rem;
+
+.gallery {
+  @extend .list--plain;
+  @extend %clearfix;
+  margin: $spacer 0 $spacer ($gallery-padding * -1);
+}
+
+.gallery--item {
+  float: left;
+  margin-bottom: $gallery-padding;
+  padding-left: $gallery-padding;
+}
+
+.gallery--link {
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.column-whole   { width: (100% / 1); }
+.column-half    { width: (100% / 2); }
+.column-third   { width: (100% / 3); }
+.column-fourth  { width: (100% / 4); }
+
+@include media($screen-xs-down) {
+  .gallery--item {
+    display: none;
+
+    &:first-child {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
