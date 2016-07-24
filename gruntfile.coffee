@@ -3,6 +3,12 @@ module.exports = (grunt) ->
   # Project configuration
   grunt.initConfig
 
+    clean:
+      js: [
+        'assets/javascripts/shared/shared.js'
+        'assets/javascripts/pages/pages.js'
+      ]
+
     coffee:
       compile:
         options:
@@ -16,36 +22,17 @@ module.exports = (grunt) ->
       dist:
         src: [
           # Manual dependency ordering (put specific files first)
-          'assets/javascripts/vendor/moment.js'
           'assets/javascripts/vendor/jquery.min.js'
-          'assets/javascripts/vendor/fullcalendar.js'
-          'assets/javascripts/vendor/gcal.js'
           'assets/javascripts/vendor/*.js'
           'assets/javascripts/shared/*.js'
           'assets/javascripts/pages/*.js'
         ]
-        dest: 'assets/javascripts/npl.min.js'
+        dest: 'assets/javascripts/majestic.min.js'
 
     uglify:
       dist:
         src: '<%= concat.dist.dest %>'
         dest: '<%= concat.dist.dest %>' # Stomp over the file
-
-    jshint:
-      options:
-        curly: true
-        eqeqeq: true
-        immed: true
-        latedef: true
-        newcap: true
-        noarg: true
-        sub: true
-        undef: true
-        unused: true
-        boss: true
-        eqnull: true
-        browser: true
-        globals: {}
 
     autoprefixer:
       dist:
@@ -76,14 +63,14 @@ module.exports = (grunt) ->
         tasks: ['sass', 'autoprefixer']
       coffeescripts:
         files: ['assets/javascripts/**/*.coffee']
-        tasks: ['coffee', 'jshint', 'concat', 'uglify']
+        tasks: ['coffee', 'concat', 'uglify']
       javascripts:
         files: [
           'assets/javascripts/pages/**/*.js'
           'assets/javascripts/shared/**/*.js'
           'assets/javascripts/vendor/**/*.js'
         ]
-        tasks: ['jshint', 'concat', 'uglify']
+        tasks: ['concat', 'uglify']
 
     svgmin:
       options:
@@ -109,7 +96,7 @@ module.exports = (grunt) ->
   require('load-grunt-tasks') grunt
 
   # Register tasks
-  grunt.registerTask 'default', ['coffee', 'sass', 'autoprefixer', 'watch']
-  grunt.registerTask 'scripts', ['coffee', 'jshint', 'concat', 'uglify']
+  grunt.registerTask 'default', ['sass', 'autoprefixer', 'watch', 'coffee', 'concat', 'uglify', 'clean']
+  grunt.registerTask 'scripts', ['coffee', 'concat', 'uglify', 'clean']
   grunt.registerTask 'styles', ['sass', 'autoprefixer']
   grunt.registerTask 'sprite', ['svgstore', 'svgmin']
