@@ -21,7 +21,7 @@
 
       <dt class="contact-info__label">Hours</dt>
       <dd class="contact-info__value">
-        <ul class="contact-info__hours list--plain">
+        <ul class="contact-info__hours list">
           <?php foreach ($page->office_hours()->yaml() as $office_hour): ?>
             <li><strong><?= $office_hour["days"] ?></strong>: <?= $office_hour["from"] ?>&ndash;<?= $office_hour["to"] ?></li>
           <?php endforeach ?>
@@ -29,7 +29,7 @@
       </dd>
       <dt class="contact-info__label">Visit us on</dt>
       <dd class="contact-info__value">
-        <ul class="list--plain">
+        <ul class="list">
           <?php if (strlen($page->facebook()) > 0) : ?>
             <li>
               <a class="social-link" href="<?= $page->facebook() ?>" target="_blank">

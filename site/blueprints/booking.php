@@ -10,8 +10,17 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
-    type:  textarea
-    buttons: false
-    size:  large
+  faqs:
+    label: FAQs
+    type: structure
+    modalsize: large
+    entry: >
+      <strong>{{question}}</strong><br>
+      {{answer}}
+    fields:
+      question:
+        label: Heading
+        type: text
+      answer:
+        label: Text
+        type: textarea

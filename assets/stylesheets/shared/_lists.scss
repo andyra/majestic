@@ -1,0 +1,84 @@
+// ============================================================================
+// Lists
+// ============================================================================
+
+// Lists
+// ----------------------------------------------------------------------------
+
+// Ordered and Unordered lists
+// @source: http://j.eremy.net/align-lists-flush-left/
+ul, ol {
+  margin: 0 0 $spacer;
+
+  ul, ol {
+    margin-bottom: 0;
+  }
+}
+
+// Plain lists only remove default browser padding and list-style
+.list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list--inline li {
+  display: inline-block;
+}
+
+
+// Left align unordered lists
+// @source: http://j.eremy.net/align-lists-flush-left/
+.list--pretty {
+  display: table;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    display: table-row;
+
+    &:before {
+      display: table-cell;
+      color: $gold;
+      opacity: 0.75;
+      padding-right: 0.4em;
+    }
+  }
+}
+
+.list--pretty li:before {
+  content: "\2022";
+}
+
+// Style for pretty ordered lists
+ol.list--pretty li {
+  counter-increment: table-ol;
+
+  &:before {
+    content: counter(table-ol) "•";
+    text-align: right;
+  }
+}
+
+.list--checks li:before {
+  content: "✓";
+}
+
+// Definition Lists
+dl {
+  margin: 0 0 $spacer;
+}
+
+dt, dd {
+  line-height: $line-height-base;
+}
+
+dt {
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacer / 2;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}

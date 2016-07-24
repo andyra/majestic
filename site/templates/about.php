@@ -8,8 +8,8 @@ foreach ($page->about()->yaml() as $item):
 endforeach;
 $subtitle .= "</ul>";
 ?>
-
 <?php snippet("header", array("masthead_subtitle" => $subtitle)) ?>
+
 <?php foreach ($page->about()->toStructure() as $section): ?>
   <?php $slug = slugify($section->heading()) ?>
   <section id="<?= $slug ?>" class="<?= $slug ?>-section block">

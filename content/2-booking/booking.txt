@@ -31,5 +31,187 @@ Rates:
 Faqs: 
 
 - 
-  question: Here is a question
-  answer: here is an answer
+  question: What do you provide for the venue?
+  answer: |
+    <ul class="list list--pretty list--checks">
+    <li>24 round tables (60")</li>
+    <li>8 rectangular tables (6')</li>
+    <li>190 black padded chairs</li>
+    <li>2 serving bars</li>
+    <li>Floor rugs</li>
+    <li>Setup and teardown</li>
+    </ul>
+  text: |
+    <ul class="ul-pretty ul-pretty__checks">
+    <li>24 round tables (60")</li>
+    <li>8 rectangular tables (6')</li>
+    <li>190 black padded chairs</li>
+    <li>2 serving bars</li>
+    <li>Floor rugs</li>
+    <li>Setup and teardown</li>
+    </ul>
+- 
+  question: What do I need to provide?
+  answer: |
+    On or before fourteen days prior to your event, you should provide to The Majestic:
+    
+    <ul class="list--pretty">
+    <li>A completed diagram indicating the desired set up of tables, chairs and serving bars within the venue</li>
+    <li>A completed Rental Reservation Worksheet</li>
+    <li>A list of all vendors/rentals for the Event, including phone and email contact information.</li>
+    <li>Set up of tables, chairs and serving bars will be handled by The Majestic staff.</li>
+    </ul>
+- 
+  question: What is your alcohol policy?
+  answer: |
+    <ul class="list list--pretty">
+    <li>Alcohol is permitted at private parties only</li>
+    <li>No BYOB events</li>
+    <li>Renter must provide all beverages and control all use.</li>
+    <li>Renter shall not sell alcohol on premises at any time.</li>
+    <li>Renter may not serve alcohol to minors on the premises at any time.</li>
+    <li>Renter agrees, for everyone’s safety, to ensure alcoholic beverages are consumed in a responsible manner.</li>
+    </ul>
+- 
+  question: >
+    Do you require security if serving
+    alcohol?
+  answer: >
+    The Majestic does not require or provide
+    security if serving alcohol, but it is
+    highly recommended you that you hire
+    your own security in the event that you
+    do.
+- 
+  question: Do you provide on-site catering?
+  answer: >
+    No, we do not provide catering. In
+    addition there is no open flame or
+    frying allowed on site or any cooking
+    allowed inside the venue, per city code.
+- 
+  question: >
+    Can I bring in my own food or catering
+    service?
+  answer: >
+    Yes, you are welcome to bring in your
+    own food or use the catering service of
+    your choice.
+- 
+  question: Is there an area to dance?
+  answer: >
+    Yes, there are a couple of different
+    areas that can be used for a dance
+    floor.
+- 
+  question: Can we have a DJ?
+  answer: >
+    Yes, you can have a DJ, and there is
+    room for one to set up.
+- 
+  question: Can I decorate the facility?
+  answer: |
+    The Majestic wants to make every event here a special experience. Therefore every effort will be made to allow the Renter to prepare decorations reflecting their creative preferences. However, without first obtaining prior approval, decorations for the Event shall be limited to table decorations and/or free standing signs.
+    
+    <ul class="list list--pretty">
+    <li>No candles are allowed unless they are votives in a glass container.</li>
+    <li>Absolutely no decorations may be glued, taped, or affixed, in any manner, to the walls, chairs, tables or other items belonging to the venue.</li>
+    <li>The following items are also prohibited: helium-filled balloons, glue, paint, nails, tacks, screws, glitter, tape (except gaffers tape for the purpose of securing cables to the floor), marbles, confetti, rice, decals, stickers, silly string, sand, sawdust, staples, sparklers, or other similar materials. Bubbles, birdseed, and rice may be used outside only.</li>
+    </ul>
+- 
+  question: >
+    How many people can be invited to the
+    venue?
+  answer: >
+    We offer two event meeting rooms that
+    are connected. Each room can hold up to
+    148 guests each for a total of 298 if
+    both sides are rented. Seating can only
+    be provided for approximately 190 guest
+    unless you wish to rent additional
+    tables and chairs from a third party.
+- 
+  question: >
+    Is there a separate area that could be
+    used for a reception?
+  answer: >
+    Yes, there are many options available
+    because of the configuration of the
+    event space.
+- 
+  question: >
+    Will someone from the venue be available
+    on site during the event?
+  answer: >
+    No, we are not usually on site but may
+    be contacted by phone, if needed. Staff
+    may enter and exit the premises during
+    the course of the Event. A
+    representative of The Majestic may be
+    on-site during your entire Event and may
+    be checking periodically with the
+    responsible parties to ensure everything
+    is working smoothly.
+- 
+  question: >
+    If the reception runs late, is there a
+    policy for renting additional hours?
+  answer: >
+    Yes, additional hours are handled on a
+    case-by-case basis.
+- 
+  question: >
+    Can I access the venue before/after the
+    event for setup/cleanup?
+  answer: >
+    Daily rental fees normally cover the
+    time period from 9am—11pm unless
+    otherwise agreed upon. In some cases the
+    day before an event may also be rented
+    in order to decorate. All rental
+    equipment must be removed no later than
+    the Rental End Time on the last day of
+    the Rental Period, as set forth in the
+    rental agreement, unless prior written
+    consent is obtained.
+- 
+  question: What about cleanup?
+  answer: >
+    The Majestic will be in a clean
+    condition prior to your Event. Unless
+    Morning Event Pick-Up Rental applies,
+    within two hours following the Event,
+    you are required to return the space to
+    the same condition in which it was
+    found.
+- 
+  question: How does the security deposit work?
+  answer: >
+    A Date-Hold/Security Deposit of $250
+    made payable to The Majestic is required
+    and due upon execution of this
+    agreement. For completed Events, the
+    Date-Hold/Security Deposit will be
+    refunded within 1–3 weeks following
+    the Event provided the premises are
+    maintained and left in the same
+    condition as when rented and are
+    satisfactory to The Majestic.
+- 
+  question: >
+    What happens if I need to reschedule or
+    cancel the event?
+  answer: >
+    If cancellation by the Renter occurs
+    more than 90 days prior to Event, the
+    Rental Fee paid to date shall be fully
+    refunded to Renter. The
+    Date-Hold/Security Deposit shall be
+    retained by The Majestic and applied as
+    payment of the $250 cancellation fee. If
+    cancellation by Renter occurs from 0-89
+    days prior to Event, the Rental Fee paid
+    to date may be fully retained by The
+    Majestic. Rescheduling will be
+    considered based on availability and on
+    a case by case basis.

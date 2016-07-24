@@ -5,7 +5,7 @@
 $gallery-padding:   0.5rem;
 
 .gallery {
-  @extend .list--plain;
+  @extend .list;
   @extend %clearfix;
   margin: $spacer 0;
 

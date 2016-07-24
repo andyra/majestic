@@ -2,7 +2,7 @@
 
   <footer class="footer">
     <div class="container">
-      <ul class="colophon list--plain list--inline">
+      <ul class="colophon list list--inline">
         <?php $data = $pages->find('contact') ?>
         <li class="colophon__item colophon__address">
           <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
