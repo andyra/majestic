@@ -37,3 +37,8 @@ $ ->
         next: '<div id="fluidbox-btn-next" class="gallery--nav gallery--next"></div>'
         prev: '<div id="fluidbox-btn-prev" class="gallery--nav gallery--prev"></div>'
   )
+
+$(document).keydown (e) ->
+  # ESCAPE key pressed
+  if e.keyCode == 27
+    $(".gallery--link").fluidbox('close')

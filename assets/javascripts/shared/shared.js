@@ -37,4 +37,10 @@
     });
   });
 
+  $(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+      return $(".gallery--link").fluidbox('close');
+    }
+  });
+
 }).call(this);

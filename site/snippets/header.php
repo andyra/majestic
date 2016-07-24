@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/<?= c::get('favicon') ?>-96x96.png?v=5" sizes="96x96">
 </head>
 
-<body>
+<body class="body--<?= $page->uid() ?>">
   <header class="header" role="navigation">
     <ul class="nav header__nav">
       <li class="header__logo nav__item">
