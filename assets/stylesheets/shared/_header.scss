@@ -30,15 +30,12 @@
 
   .nav__link {
     @extend %upper;
-    color: $gold;
     display: block;
     font-weight: $font-weight-bold;
     height: $header-height;
     line-height: $header-height;
 
     &:hover {
-      color: $link-color;
-
       svg {
         fill: $link-color;
         stroke: $link-color;

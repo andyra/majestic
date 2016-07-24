@@ -2,10 +2,69 @@ Title: About
 
 ----
 
-Text:
+Text: 
 
 The Majestic, in beautiful downtown Abilene, has two large rectangular rooms, a spacious kitchen, and a stage. The standard venue rental is for the North Room, which includes a catering kitchen and restroom. Should you want a little more space, the South Room can be added to your rental package, which includes a stage for your event use.
 
 Though the rooms have been restored and remodeled, the classic charm of the building has been preserved. The original maple floor in the South Room is perfect for dancing. The original dark pine wood floor in the North Room provides a rich, elegant, and comfortable ambiance to compliment your event.
 
 The lighting in both rooms is extremely versatile, with suspended light fixtures and track lighting which highlight the exposed brick of the 100 year-old walls. All lights have dimmers which enable you to provide the look and atmosphere you want. Whether you want a bright, open feel for a daytime meeting or wedding reception or a more softly lit, warm feel for an elegant dinner party, formal dance, or evening event, The Majestic is versatile enough for any occasion.
+
+----
+
+About: 
+
+- 
+  heading: History
+  text: |
+    The Majestic is one of the oldest buildings in downtown Abilene. Early records from the Sanborn Insurance Maps date back to 1885, when 181 and 173 Pine housed a bank and a grocery until 1902, when the bank became a saloon and the grocery became a hardware store.
+    
+    Then in 1908, the Sanborn records show that the building became Abilene’s first moving pictures house: The Majestic (as listed in the 1909 City Directory). Eventually, the moving pictures house moved down the street, and in 1915 the building became a confectionary (some people believe this was the original home of Vletas & Vletas).
+    
+    The building has changed hands many more times since then and served the city of Abilene in a variety of ways. Today, we pay tribute to one of the buildings most exciting uses in rechristening the building as The Majestic. Our hope is that it will continue to provide many more memories for the residents of Abilene and surrounding areas as it has always done throughout its rich and colorful past.
+- 
+  heading: The Space
+  text: |
+    The Majestic, in beautiful downtown Abilene, has two large rectangular rooms, a spacious kitchen, and a stage. The standard venue rental is for the North Room, which includes a catering kitchen and restroom. Should you want a little more space, the South Room can be added to your rental package, which includes a stage for your event use.
+    
+    Though the rooms have been restored and remodeled, the classic charm of the building has been preserved. The original maple floor in the South Room is perfect for dancing. The original dark pine wood floor in the North Room provides a rich, elegant, and comfortable ambiance to compliment your event.
+    
+    The lighting in both rooms is extremely versatile, with suspended light fixtures and track lighting which highlight the exposed brick of the 100 year-old walls. All lights have dimmers which enable you to provide the look and atmosphere you want. Whether you want a bright, open feel for a daytime meeting or wedding reception or a more softly lit, warm feel for an elegant dinner party, formal dance, or evening event, The Majestic is versatile enough for any occasion.
+  gallery: ""
+- 
+  heading: Events
+  text: |
+    Some of the events that have been held in this space include:
+    
+    <ul class="event-list">
+    <li class="event-list--item">Weddings</li>
+    <li class="event-list--item">Wedding Receptions</li>
+    <li class="event-list--item">Prom</li>
+    <li class="event-list--item">College Dances</li>
+    <li class="event-list--item">High School Formals</li>
+    <li class="event-list--item">Election Night Political Headquarters</li>
+    <li class="event-list--item">Dinner Parties</li>
+    <li class="event-list--item">Anniversary Parties</li>
+    <li class="event-list--item">Conferences</li>
+    <li class="event-list--item">Business Meetings</li>
+    <li class="event-list--item">Conventions</li>
+    <li class="event-list--item">Bat Mitzvah</li>
+    <li class="event-list--item">Rummage sale</li>
+    <li class="event-list--item">Fundraising</li>
+    <li class="event-list--item">Charity Auction</li>
+    <li class="event-list--item">Pancake Supper</li>
+    <li class="event-list--item">Mardi Gras Party</li>
+    <li class="event-list--item">Awards Ceremonies</li>
+    <li class="event-list--item">FFA Banquet</li>
+    <li class="event-list--item">Sports Banquets</li>
+    <li class="event-list--item">Fraternity Formals</li>
+    <li class="event-list--item">Sorority Formals</li>
+    <li class="event-list--item">Birthday Parties</li>
+    <li class="event-list--item">Quinceañeras</li>
+    <li class="event-list--item">Black Tie Affairs</li>
+    <li class="event-list--item">Cinco De Mayo</li>
+    <li class="event-list--item">Church Services</li>
+    <li class="event-list--item">Valentines Party</li>
+    <li class="event-list--item">Recitals</li>
+    <li class="event-list--item">...and more!</li>
+    </ul>

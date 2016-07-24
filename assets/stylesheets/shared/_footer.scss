@@ -37,6 +37,10 @@
 .colophon__social a {
   display: inline-block;
   padding: 0.25rem 0.5rem;
+
+  &:hover svg {
+    fill: $link-color;
+  }
 }
 
 @include media($screen-xs-down) {

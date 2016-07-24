@@ -1,5 +1,6 @@
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<?= js("https://code.jquery.com/jquery-3.1.0.min.js") ?>
 <script>window.jQuery || document.write('<script src="assets/javascripts/jquery-3.1.0.min.js"><\/script>')</script>
+<?= js("https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBhCZ6U4_DCMC6hz_l_jWIItKSPrp5fOX0") ?>
 <?= js("assets/javascripts/majestic.min.js") ?>
 
 <?php # Google Analytics ?>

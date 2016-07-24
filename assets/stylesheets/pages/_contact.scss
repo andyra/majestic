@@ -42,7 +42,7 @@
   }
 
   .contact-info__label {
-    margin: 0;
+    margin: $spacer 0 0;
   }
 
   .address--street,
@@ -130,6 +130,7 @@ $zoom-icon-size:  16px;
 
 .map__zoom-control {
   background-color: $tomato;
+  color: $white;
   cursor: pointer;
   font-size: 2em;
   height: $zoom-btn-size;

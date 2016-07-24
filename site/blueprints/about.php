@@ -3,15 +3,31 @@
 title: About
 pages: false
 files: true
-  type: image
   sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: textarea
 deletable: false
 fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
-    type:  textarea
-    buttons: false
-    size:  large
+  about:
+    label: Content
+    type: structure
+    modalsize: large
+    entry: >
+      <strong>{{heading}}</strong><br>
+      {{text}}
+    fields:
+      heading:
+        label: Heading
+        type: text
+      text:
+        label: Text
+        type: textarea
+      gallery:
+        label: Gallery
+        type: textarea
+        help: Make sure you have added the images to the page on the left, then type the name of the images in this field, one per line like so:<br>image-one.jpg<br>image-two.jpg<br>image-three.jpg
