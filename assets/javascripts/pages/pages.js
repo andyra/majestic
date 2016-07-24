@@ -3,7 +3,7 @@
 
   init = function() {
     var CustomZoomControl, assetPath, brightness_value, infowindow, is_internetExplorer11, latitude, longitude, main_color, map, mapContainer, map_options, map_zoom, marker_url, saturation_value, style, zoomControl, zoomControlDiv;
-    if ($("body").hasClass(".body--contact")) {
+    if ($("body").hasClass("body--contact")) {
       latitude = 32.450159;
       longitude = -99.7325808;
       map_zoom = 16;

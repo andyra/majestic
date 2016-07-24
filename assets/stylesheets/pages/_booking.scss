@@ -6,10 +6,10 @@
 // ----------------------------------------------------------------------------
 
 // <dl class="rates">
-//   <dt class="rates--heading">...</dt>
-//   <dd class="rates--content">
+//   <dt class="rates__heading">...</dt>
+//   <dd class="rates__content">
 //     <ul class="rates-list">
-//       <li class="rates-list--item">...</li>
+//       <li class="rates-list__item">...</li>
 //       ...
 //     </ul>
 //   </dd>
@@ -17,18 +17,22 @@
 
 
 // The heading for each rates section ("Daily, 9am-12pm")
-.rates--heading {
+.rates__heading {
   @extend %upper;
+
+  .rates__content + & {
+    margin-top: $spacer;
+  }
 }
 
-.rates--subheading {
+.rates__subheading {
   color: $gray;
   margin-left: .5rem;
   font-weight: normal;
 }
 
 // The <li> line-items
-.rates-list--item {
+.rates-list__item {
   overflow: hidden;
 
   .term {
@@ -59,8 +63,6 @@
 
 .file-list {
   @include row;
-  padding-left: 1rem;
-  padding-right: 1rem;
 
   li {
     @include span-columns(4);
@@ -86,7 +88,7 @@
       border: $border-width-base solid $green;
       height: auto;
       margin-bottom: $spacer / 2;
-      padding: 0.25rem;
+      padding: 0.75rem 0.25rem;
 
       &:after {
         display: none;
@@ -111,6 +113,7 @@
   border: $border-width-base solid $green;
   color: $green;
   font-size: $font-size-sm;
+  font-weight: bold;
   height: 11rem;
   margin: 0 auto ($spacer / 2);
   max-width: 8rem;

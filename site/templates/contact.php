@@ -48,14 +48,16 @@
       </dd>
     </dl>
 
-    <section class="map">
-      <div class="map__container"></div>
-      <div class="map__zoom-control map__zoom-in">+</div>
-      <div class="map__zoom-control map__zoom-out">&ndash;</div>
-      <a class="map__view-on-google" href="https://www.google.com/maps/place/181+Pine+St,+Abilene,+TX+79601/@32.4502531,-99.7329453,17z/data=!3m1!4b1!4m2!3m1!1s0x86568e19b89c64f5:0xb5214bb1a242e9b0" target="_blank">View on Google Maps</a>
-    </section>
-
   </div>
+</div>
+
+<div class="container container--md">
+  <section class="map">
+    <div class="map__container"></div>
+    <div class="map__zoom-control map__zoom-in">+</div>
+    <div class="map__zoom-control map__zoom-out">&ndash;</div>
+    <a class="map__view-on-google" href="https://www.google.com/maps/place/181+Pine+St,+Abilene,+TX+79601/@32.4502531,-99.7329453,17z/data=!3m1!4b1!4m2!3m1!1s0x86568e19b89c64f5:0xb5214bb1a242e9b0" target="_blank">View on Google Maps</a>
+  </section>
 </div>
 
 <?php snippet("footer") ?>

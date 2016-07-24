@@ -6,7 +6,7 @@
 # When the window has finished loading create our google map below
 
 init = ->
-  if $("body").hasClass(".body--contact")
+  if $("body").hasClass("body--contact")
     # Set google maps parameters
     latitude = 32.450159
     longitude = -99.7325808
