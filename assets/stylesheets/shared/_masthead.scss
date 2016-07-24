@@ -14,6 +14,10 @@
   margin-top: $header-height;
   padding: ($spacer * 3) 0;
   text-align: center;
+
+  @include media($screen-md-down) {
+    margin-top: $mobile-line-height;
+  }
 }
 
 .masthead__title {
