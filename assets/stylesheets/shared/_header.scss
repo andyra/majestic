@@ -3,17 +3,23 @@
 // ============================================================================
 
 .header {
+  background-color: $white;
+  box-shadow: 0 0 8px rgba($black, 0.15);
   display: flex;
   justify-content: center;
   left: 0;
+  position: fixed;
   right: 0;
-  position: absolute;
   text-align: center;
   top: 0;
-  transition: $timing-base $easing-base all;
+  transition: transform 200ms ease-in-out;
   width: 100%;
+  will-change: transform;
   z-index: 1;
 }
+
+.header--pinned   { transform: translateY(0%); }
+.header--unpinned { transform: translateY(-100%); }
 
 // Nav
 // ----------------------------------------------------------------------------
@@ -24,11 +30,20 @@
 
   .nav__link {
     @extend %upper;
-    color: $text-color;
+    color: $gold;
     display: block;
     font-weight: $font-weight-bold;
     height: $header-height;
     line-height: $header-height;
+
+    &:hover {
+      color: $link-color;
+
+      svg {
+        fill: $link-color;
+        stroke: $link-color;
+      }
+    }
 
     @include media($screen-md-down) {
       height: $header-height-sm;
@@ -42,11 +57,11 @@
 
   .nav__link--active,
   .nav__link--active:hover {
-    color: $white;
+    color: $text-color;
 
     svg {
-      fill: $white;
-      stroke: $white;
+      fill: $text-color;
+      stroke: $text-color;
     }
   }
 }

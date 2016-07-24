@@ -16,7 +16,7 @@
 <body>
   <header class="header" role="navigation">
     <ul class="nav header__nav">
-      <li class="nav__item header__logo">
+      <li class="header__logo nav__item">
         <a class="nav__link<?php if ($page->isHomePage()) echo ' nav__link--active' ?>" href="#home"><?php sprite('logo', 75.5, 50) ?></a>
       </li>
       <?php foreach($pages->visible() as $item): ?>

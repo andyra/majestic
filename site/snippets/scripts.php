@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/javascripts/jquery-3.1.0.min.js"><\/script>')</script>
 <?= js("assets/javascripts/majestic.min.js") ?>
 
 <?php # Google Analytics ?>

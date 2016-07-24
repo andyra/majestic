@@ -7,6 +7,5 @@
         <?= $page->title() ?>
       <?php endif ?>
     </h1>
-    <h2 class="masthead__subtitle"><?= $site->description()->html() ?></h2>
   </div>
 </section>
